@@ -10,6 +10,7 @@ Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: GPL 
 BuildRequires: kdelibs4-devel
+BuildRequires: kdebase4-workspace-devel
 
 %description
 Skulpture theme for KDE 4
