@@ -32,13 +32,12 @@ popd
 rm -rf $RPM_BUILD_ROOT 
 
 %files 
+#%{_kde_libdir}/kde4/kwin_qtcurve_config.so
 %{_kde_libdir}/kde4/kstyle_skulpture_config.so
 %{_kde_libdir}/kde4/kwin3_skulpture.so
-#%{_kde_libdir}/kde4/kwin_qtcurve_config.so
 %{_kde_libdir}/kde4/kwin_skulpture_config.so
-%{_kde_libdir}/qt4/plugins/lib/styles/libskulpture.so
+%{qt4dir}/plugins/%{_lib}/styles/libskulpture.so
 %{_kde_appsdir}/color-schemes/
-%{_kde_appsdir}/kstyle/
+%{_kde_appsdir}/kstyle/themes/
 %{_kde_appsdir}/kwin/
-
 
