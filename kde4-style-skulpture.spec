@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_kde_libdir}/kde4/kstyle_skulpture_config.so
 %{_kde_libdir}/kde4/kwin3_skulpture.so
 %{_kde_libdir}/kde4/kwin_skulpture_config.so
-%{qt4dir}/plugins/styles/libskulpture.so
+%{qt4plugins}/styles/libskulpture.so
 %{_kde_appsdir}/color-schemes/
 %{_kde_appsdir}/kstyle/themes/
 %{_kde_appsdir}/kwin/
