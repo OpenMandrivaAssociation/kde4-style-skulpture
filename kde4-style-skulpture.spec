@@ -2,9 +2,9 @@
 
 Name: kde4-style-%{shortname} 
 Summary: Skulpture Theme for KDE4
-Version: 0.2.0
+Version: 0.2.2
 Release: %mkrel 1
-Source0: %{shortname}-%{version}.tar.bz2
+Source0: http://www.kde-look.org/CONTENT/content-files/59031-%{shortname}-%{version}.tar.bz2
 Patch0: skulpture-0.1.3-kdeplugin-cmake.patch
 URL: http://www.kde-look.org/content/show.php/Skulpture?content=59031
 Group: Graphical desktop/KDE
@@ -23,6 +23,7 @@ Skulpture theme for KDE 4
 %{_kde_appsdir}/color-schemes/
 %{_kde_appsdir}/kstyle/themes/
 %{_kde_appsdir}/kwin/
+%{_kde_appsdir}/skulpture
 %{_kde_plugindir}/styles/*
 
 #--------------------------------------------------------------------------------
