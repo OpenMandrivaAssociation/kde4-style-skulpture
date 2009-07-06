@@ -2,10 +2,11 @@
 
 Name: kde4-style-%{shortname} 
 Summary: Skulpture Theme for KDE4
-Version: 0.2.2
-Release: %mkrel 2
+Version: 0.2.3
+Release: %mkrel 1
 Source0: http://www.kde-look.org/CONTENT/content-files/59031-%{shortname}-%{version}.tar.bz2
 Patch0: skulpture-0.1.3-kdeplugin-cmake.patch
+Patch1: kde4-style-skulpture-kwin.patch
 URL: http://www.kde-look.org/content/show.php/Skulpture?content=59031
 Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -31,6 +32,7 @@ Skulpture theme for KDE 4
 %prep 
 %setup -q -n %shortname-%version
 %patch0 -p1
+%patch1 -p1 -b .kwin
 
 %build 
 %cmake_kde4 
