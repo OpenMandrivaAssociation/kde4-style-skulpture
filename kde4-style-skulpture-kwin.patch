@@ -1,0 +1,12 @@
+diff -p -up skulpture-0.2.3/kwin-client/kwin_skulpture.cpp.orig skulpture-0.2.3/kwin-client/kwin_skulpture.cpp
+--- skulpture-0.2.3/kwin-client/kwin_skulpture.cpp.orig	2009-07-06 14:41:57.000000000 -0300
++++ skulpture-0.2.3/kwin-client/kwin_skulpture.cpp	2009-07-06 14:42:09.000000000 -0300
+@@ -345,7 +345,7 @@ void QtMdiDecoration::init()
+ 	widget()->setAutoFillBackground(false);
+ 	widget()->setAttribute(Qt::WA_NoSystemBackground, true);
+ 	widget()->setAttribute(Qt::WA_OpaquePaintEvent, true);
+-	widget()->setAttribute(Qt::WA_PaintOnScreen, false);
++	//widget()->setAttribute(Qt::WA_PaintOnScreen, false);
+ }
+ 
+ 

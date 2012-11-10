@@ -1,0 +1,25 @@
+--- skulpture-0.1.3/src/CMakeLists.txt.orig	2008-07-04 10:35:10.000000000 -0300
++++ skulpture-0.1.3/src/CMakeLists.txt	2008-07-04 10:35:21.000000000 -0300
+@@ -2,16 +2,16 @@
+ 
+ set (skulpture_SOURCES skulpture.cpp)
+ 
+-#if (KDE4_FOUND)
+-#	kde4_add_plugin (skulpture ${skulpture_SOURCES})
+-#	target_link_libraries (skulpture ${KDE4_KDEUI_LIBS})
+-#	install (TARGETS skulpture DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/styles)
+-#else (KDE4_FOUND)
++if (KDE4_FOUND)
++	kde4_add_plugin (skulpture ${skulpture_SOURCES})
++	target_link_libraries (skulpture ${KDE4_KDEUI_LIBS})
++	install (TARGETS skulpture DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/styles)
++else (KDE4_FOUND)
+ 	qt4_automoc (${skulpture_SOURCES})
+ 	add_library (skulpture SHARED ${skulpture_SOURCES})
+ 	target_link_libraries (skulpture ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY})
+ 	install (TARGETS skulpture LIBRARY DESTINATION ${QT_PLUGINS_DIR}/styles)
+-#endif (KDE4_FOUND)
++endif (KDE4_FOUND)
+ 
+ if (KDE4_FOUND)
+ 	install (FILES skulpture.themerc DESTINATION ${DATA_INSTALL_DIR}/kstyle/themes)
