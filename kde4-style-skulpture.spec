@@ -7,7 +7,7 @@ Release: 3
 Source0: http://www.kde-look.org/CONTENT/content-files/59031-%{shortname}-%{version}.tar.bz2
 Patch0: skulpture-0.1.3-kdeplugin-cmake.patch
 Patch1: kde4-style-skulpture-kwin.patch
-URL: http://www.kde-look.org/content/show.php/Skulpture?content=59031
+URL: https://www.kde-look.org/content/show.php/Skulpture?content=59031
 Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: GPL 
