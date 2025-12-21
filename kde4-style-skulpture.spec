@@ -11,6 +11,7 @@ URL: https://www.kde-look.org/content/show.php/Skulpture?content=59031
 Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: GPL 
+BuildRequires:	make
 BuildRequires: kdelibs4-devel
 BuildRequires: kdebase4-workspace-devel
 
